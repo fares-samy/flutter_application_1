@@ -40,7 +40,6 @@ class _ProductPageState extends State<ProductPage> {
           return GridView.builder(
             padding: EdgeInsets.all(10),
 
-            // 🔥 أهم تعديل هنا
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               childAspectRatio: 0.75,
@@ -53,7 +52,7 @@ class _ProductPageState extends State<ProductPage> {
               final product = items[index];
 
               return SizedBox(
-                height: 100, // 🔥 بيحدد حجم الكارد
+                height: 100, 
                 child: Card(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
@@ -64,7 +63,6 @@ class _ProductPageState extends State<ProductPage> {
                     children: [
                       SizedBox(height: 8),
 
-                      // 🔥 الصورة أصغر دلوقتي
                       SizedBox(
                         height: 500,
                         child: Padding(
